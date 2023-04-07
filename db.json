@@ -1,0 +1,66 @@
+{
+  "user": {
+    "userName": "Jaa9Bravo",
+    "gender": "Mann",
+    "waight": 110
+  },
+
+  "food": [
+    {
+      "id": 0,
+      "protein": 60,
+      "kcal": 700,
+      "name": "BD Taco",
+      "when": "2023-04-05T17:45:24"
+    },
+    {
+      "id": 1,
+      "protein": 20,
+      "kcal": 198,
+      "name": "PROPUD Brownie bliss",
+      "when": "2023-04-05T19:47:54"
+    },
+    {
+      "id": 2,
+      "protein": 20,
+      "kcal": 198,
+      "name": "PROPUD Rocky Road",
+      "when": "2023-04-05T19:48:54"
+    },
+    {
+      "id": 3,
+      "protein": 20,
+      "kcal": 198,
+      "name": "PROPUD Brownie bliss",
+      "when": "2023-04-05T19:47:54"
+    },
+    {
+      "id": 4,
+      "protein": 20,
+      "kcal": 198,
+      "name": "PROPUD Rocky Road",
+      "when": "2023-04-05T19:48:54"
+    },
+    {
+      "id": 5,
+      "protein": 48,
+      "kcal": 228,
+      "name": "2X protein pulver",
+      "when": "2023-04-05T19:48:54"
+    },
+    {
+      "id": 6,
+      "protein": 50,
+      "kcal": 500,
+      "name": "Burito",
+      "when": "2023-04-05T23:48:54"
+    },
+    {
+      "id": 7,
+      "protein": 50,
+      "kcal": 350,
+      "name": "Gresk yougert",
+      "when": "2023-04-05T23:59:59"
+    }
+  ]
+}
