@@ -5,3 +5,11 @@
 body {
   background-color: rgb(64, 64, 64);
 }
+
+input {
+  background-color: black;
+}
+
+button {
+  background-color: black;
+}

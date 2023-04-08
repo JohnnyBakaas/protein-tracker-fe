@@ -1,5 +1,6 @@
-const TodaysIntake = ({ meals }) => {
-  const todatsFood = SeperateTodaysFood(meals);
+const TodaysIntake = ({ data }) => {
+  const todatsFood = SeperateTodaysFood(data.food, data.user);
+
   return (
     <section>
       <h2>Idag</h2>
@@ -8,9 +9,9 @@ const TodaysIntake = ({ meals }) => {
   );
 };
 
-const SeperateTodaysFood = (meals) => {
+const SeperateTodaysFood = (meals, user) => {
   const todaysMeals = [];
-  meals[0].map((meal) => {
+  meals.map((meal) => {
     const today = new Date();
     const dateToCheck = new Date(meal.when);
 
@@ -22,25 +23,30 @@ const SeperateTodaysFood = (meals) => {
       todaysMeals.push(meal);
     } else {
       // Fjern dette så fort vi har mer data
-      todaysMeals.push(meal);
+      // todaysMeals.push(meal);
     }
   });
 
   let totalProtein = 0;
   let totalCalories = 0;
   todaysMeals.map((meal) => {
-    totalProtein += meal.protein;
-    totalCalories += meal.kcal;
+    totalProtein += parseFloat(meal.protein);
+    totalCalories += parseFloat(meal.kcal);
   });
   let table = TodaysTable(todaysMeals);
   const kgToLbs = 2.2;
+
+  if (!todaysMeals.length) {
+    return <div>Du har ingen måltider</div>;
+  }
 
   return (
     <div>
       <p>kcal: {totalCalories} </p>
       <p>
-        protein: {totalProtein} / {meals[1].waight * ~~kgToLbs}
+        protein: {totalProtein} / {~~(user.waight * kgToLbs)}
       </p>
+      <p>Protein som mangler: {~~(user.waight * kgToLbs) - totalProtein}</p>
       {table}
     </div>
   );
@@ -60,7 +66,7 @@ const TodaysTable = (data) => {
       <tbody>
         {data.map((item) => {
           return (
-            <tr key={item.id}>
+            <tr key={item.id ? item.id : 0}>
               <td>{item.name}</td>
               <td>{item.protein}</td>
               <td>{item.kcal}</td>

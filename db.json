@@ -4,63 +4,55 @@
     "gender": "Mann",
     "waight": 110
   },
-
   "food": [
     {
-      "id": 0,
+      "name": "Taco greie",
+      "protein": "50",
+      "kcal": "600",
+      "when": "2023-04-07T09:53:32.813Z",
+      "id": 1
+    },
+    {
+      "name": "Shake",
+      "protein": "50",
+      "kcal": "220",
+      "when": "2023-04-07T10:12:24.715Z",
+      "id": 2
+    },
+    {
+      "name": "Taco greie",
+      "protein": "50",
+      "kcal": "600",
+      "when": "2023-04-07T10:12:45.324Z",
+      "id": 3
+    },
+    {
+      "name": "propud milkshake",
+      "protein": "20",
+      "kcal": "200",
+      "when": "2023-04-07T10:13:41.669Z",
+      "id": 4
+    },
+    {
+      "name": "taco bab",
+      "protein": "60",
+      "kcal": "600",
+      "when": "2023-04-08T01:06:52.907Z",
+      "id": 5
+    },
+    {
+      "name": "Milkshake",
+      "protein": "20",
+      "kcal": "200",
+      "when": "2023-04-08T01:57:16.544Z",
+      "id": 6
+    },
+    {
+      "name": "Taco bab",
       "protein": 60,
-      "kcal": 700,
-      "name": "BD Taco",
-      "when": "2023-04-05T17:45:24"
-    },
-    {
-      "id": 1,
-      "protein": 20,
-      "kcal": 198,
-      "name": "PROPUD Brownie bliss",
-      "when": "2023-04-05T19:47:54"
-    },
-    {
-      "id": 2,
-      "protein": 20,
-      "kcal": 198,
-      "name": "PROPUD Rocky Road",
-      "when": "2023-04-05T19:48:54"
-    },
-    {
-      "id": 3,
-      "protein": 20,
-      "kcal": 198,
-      "name": "PROPUD Brownie bliss",
-      "when": "2023-04-05T19:47:54"
-    },
-    {
-      "id": 4,
-      "protein": 20,
-      "kcal": 198,
-      "name": "PROPUD Rocky Road",
-      "when": "2023-04-05T19:48:54"
-    },
-    {
-      "id": 5,
-      "protein": 48,
-      "kcal": 228,
-      "name": "2X protein pulver",
-      "when": "2023-04-05T19:48:54"
-    },
-    {
-      "id": 6,
-      "protein": 50,
-      "kcal": 500,
-      "name": "Burito",
-      "when": "2023-04-05T23:48:54"
-    },
-    {
-      "id": 7,
-      "protein": 50,
-      "kcal": 350,
-      "name": "Gresk yougert",
-      "when": "2023-04-05T23:59:59"
+      "kcal": 600,
+      "when": "2023-04-08T06:33:31.281Z",
+      "id": 7
     }
   ]
 }
